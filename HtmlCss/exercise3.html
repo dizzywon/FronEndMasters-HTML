@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boxing</title>
+
+    <style type="text/css">
+    *{
+    box-sizing: border-box;
+    }
+
+    body{
+    font-family: monospace;
+    }
+
+    #special{
+    background-color: purple;
+    }
+    div{
+    height: 100px;
+    width:200px;
+    border: 2px solid red;
+    background-color: orange;
+    margin: 50px auto 20px auto ;
+    padding: 10px 20px;
+    }
+    .this-class{
+    background: green;
+    }
+    .this-class.another-class{
+    background-color: blue;
+    }
+    .parent-div{
+        width: 40%;
+    background-color: blue;
+    border-color: transparent;
+    margin: 0;
+    height: auto;
+    }
+
+    .parent-div div{
+    background-color: cyan;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <div>no class</div>
+        <div class="this-class">one class</div>
+        <div>also no class</div>
+        <div class="this-class another-class">two classes</div>
+        <div id="special" class="this-class another-class">two classes + id</div>
+    </div>
+</body>
+</html>
